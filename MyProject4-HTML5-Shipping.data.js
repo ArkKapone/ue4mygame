@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'G:/Àíðèàë ýíæn gjgsnrf 2/MyProject4 - êîïèÿ/Binaries/HTML5/MyProject4-HTML5-Shipping.data';
-    var REMOTE_PACKAGE_BASE = 'MyProject4-HTML5-Shipping.data';
+    var PACKAGE_NAME = 'https://dl.dropboxusercontent.com/s/z104z6l4c3gfvep/MyProject4-HTML5-Shipping.data?dl=0';
+    var REMOTE_PACKAGE_BASE = 'https://dl.dropboxusercontent.com/s/z104z6l4c3gfvep/MyProject4-HTML5-Shipping.data?dl=0';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -149,10 +149,10 @@ Module['FS_createPath']('/MyProject4/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_G:/Àíðèàë ýíæn gjgsnrf 2/MyProject4 - êîïèÿ/Binaries/HTML5/MyProject4-HTML5-Shipping.data');
+              Module['removeRunDependency']('datafile_G:/ç†ç—‚åš¯ î‘–éŽ› gjgsnrf 2/MyProject4 - è§é•¨ï¿½/Binaries/HTML5/MyProject4-HTML5-Shipping.data');
 
     };
-    Module['addRunDependency']('datafile_G:/Àíðèàë ýíæn gjgsnrf 2/MyProject4 - êîïèÿ/Binaries/HTML5/MyProject4-HTML5-Shipping.data');
+    Module['addRunDependency']('datafile_G:/ç†ç—‚åš¯ î‘–éŽ› gjgsnrf 2/MyProject4 - è§é•¨ï¿½/Binaries/HTML5/MyProject4-HTML5-Shipping.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
